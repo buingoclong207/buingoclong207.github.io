@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+                  * { margin:0px; padding:0px; border:0px; box-sizing:border-box;}
+				body { font-family:'Times New Roman', Times, serif; font-size:14px; line-height:1.4;background-color:#f1f1f1; overflow:scroll; color:#333333;}
+				h1 { font-size:32px; text-align: center; margin-right: 70px; background-color: aqua;}
+				ul { list-style:none;}
+				a { text-decoration:none;}
+                #wrap {max-width: 1200px; height: 700px ; margin: 0px auto;}
+                .thumb img {width:25%; height:200px;margin:20px 30px; }
+                .name {font-size: 20px; font-weight: bold;text-align:right; margin-right: 100px;}
+                @keyframes us {
+    30%  {margin-right: 300px;}
+    60%  {opacity: 1;}
+    100% {opacity: 0 ;margin-right: 600px}
+}          
+
+@keyframes is {
+    0%  {background-color: #EF7126; color: #F9E559;}
+    25%  {background-color: #6F3662; color: #FFFFFF;}
+    50%  {background-color: #9F6164; color: #F8DEBD;}
+    75%  {background-color: #44B3C2; color: #FFFFFF;}
+    100% {background-color: #218C8D; color: #F9E559;}
+
+} 
+@keyframes as {
+    50% {opacity:0; }
+    
+
+}   
+@keyframes bs {
+    50% {opacity:0; }
+    
+
+}   
+         
+.name {animation: us 5s ease infinite; }
+h1{animation: is 5s ease infinite}   
+img {animation: as 5s ease infinite} 
+img {animation: bs 10s ease infinite} 
+    </style> 
+</head>
+<body>
+       <div id="wrap">
+              <h1>Ảnh Thiên Nhiên</h2>
+              <div class="thumb">
+                       <img src="img/anh-dep-1.jpg">
+                       <img src="img/anh-dep-10.jpg">
+                       <img src="img/anh-dep-12.jpg">
+                       <img src="img/anh-dep-2.jpg">
+                       <img src="img/anh-dep-4.jpg">
+                       <img src="img/anh-dep-6.jpg">
+              </div>
+              <div class="name">Bùi Ngọc Long</div>
+       </div>
+</body>
+</html>
