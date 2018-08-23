@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Thiệp Giáng Sinh</title>
+               <style>  body{background-color: black;}
+                        #wrap {max-width: 100%; height: 700px; background-color: black;}
+                        .snow-container{position:fixed;width:100%;max-width:100%;z-index:3;pointer-events:none;overflow:hidden;top:0;height:100%}
+.snow{display:block;position:absolute;z-index:2;top:0;right:0;bottom:0;left:0;pointer-events:none;-webkit-transform:translate3d(0,-100%,0);transform:translate3d(0,-100%,0);-webkit-animation:snow linear infinite;animation:snow linear infinite}
+.snow.foreground{background-image:url("https://dl6rt3mwcjzxg.cloudfront.net/assets/snow/snow-large-075d267ecbc42e3564c8ed43516dd557.png");-webkit-animation-duration:15s;animation-duration:10s}
+.snow.foreground.layered{-webkit-animation-delay:7.5s;animation-delay:7.5s}
+.snow.middleground{background-image:url(https://dl6rt3mwcjzxg.cloudfront.net/assets/snow/snow-medium-0b8a5e0732315b68e1f54185be7a1ad9.png);-webkit-animation-duration:20s;animation-duration:15s}
+.snow.middleground.layered{-webkit-animation-delay:10s;animation-delay:10s}
+.snow.background{background-image:url(https://dl6rt3mwcjzxg.cloudfront.net/assets/snow/snow-small-1ecd03b1fce08c24e064ff8c0a72c519.png);-webkit-animation-duration:25s;animation-duration:20s}
+.snow.background.layered{-webkit-animation-delay:12.5s;animation-delay:12.5s}
+@-webkit-keyframes snow{0%{-webkit-transform:translate3d(0,-100%,0);transform:translate3d(0,-100%,0)}100%{-webkit-transform:translate3d(5%,100%,0);transform:translate3d(5%,100%,0)}}
+@keyframes snow{0%{-webkit-transform:translate3d(0,-100%,0);transform:translate3d(0,-100%,0)}100%{-webkit-transform:translate3d(5%,100%,0);transform:translate3d(5%,100%,0)}}
+                    .bg1 img { width: 99% ; height:723px ; position: absolute;z-index:4}
+                    .bg2 img {width: 18%;height:314px;position: absolute;z-index:5;bottom:5px;right:1px;}
+                    .bg3 img.b-1 {width: 2%;height:27px;position: absolute;z-index:5;bottom:103px;right:51px;animation:as-1 1s ease-in-out infinite; opacity: 0 }
+                    .bg3 img.b-2 {width: 2%;height:27px;position: absolute;z-index:5;bottom:101px;right:111px;animation:as-2 2s ease-in-out infinite; opacity: 0 }
+                    .bg3 img.b-3 {width: 2%;height:27px;position: absolute;z-index:5;bottom:161px;right:150px;animation:as-3 3s ease-in-out infinite; opacity: 0 }
+                    .bg3 img.b-4 {width: 2%;height:27px;position: absolute;z-index:5;bottom:71px;right:97px;animation:as-4 1s ease-in-out infinite; opacity: 0 }
+                    .bg3 img.b-5 {width: 2%;height:27px;position: absolute;z-index:5;bottom:134px;right:123px;animation:as-5 2s ease-in-out infinite; opacity: 0 }
+                    .bg3 img.b-6 {width: 2%;height:27px;position: absolute;z-index:5;bottom:258px;right:71px;animation:as-6 3s ease-in-out infinite; opacity: 0 }
+                    .bg3 img.b-7 {width: 2%;height:27px;position: absolute;z-index:5;bottom:157px;right:41px;animation:as-7 1s ease-in-out infinite; opacity: 0 }
+                    .bg4 img {width: 23%;height:190px;position: absolute;z-index:5;bottom:193px;left:13px;}
+                    .tit {width: 100%;}
+                    .tit h2{position: absolute; font-size: 70px;font-style: italic;}
+                    .tit h2.t-1 {left: 299px; color: blue; animation: ts-1 16s ease-in-out infinite;opacity:0 }
+                    .tit h2.t-2 {left: 368px; color: blueviolet;animation: ts-2 16s ease-in-out infinite;opacity:0 }
+                    .tit h2.t-3 {left: 416px; color: brown;animation: ts-3 16s ease-in-out infinite;opacity:0 }
+                    .tit h2.t-4 {left: 471px;color:burlywood;animation: ts-4 16s ease-in-out infinite;opacity:0 }
+                    .tit h2.t-5 {left: 518px; color: cadetblue;animation: ts-5 16s ease-in-out infinite;opacity:0 }
+                    .tit h2.t-6 {left: 596px; color: chartreuse;animation: ts-6 16s ease-in-out infinite;opacity:0 }
+                    .tit h2.t-7 {left: 645px; color: chocolate;animation: ts-7 16s ease-in-out infinite;opacity:0 }
+                    .tit h2.t-8 {left: 703px; color: coral;animation: ts-8 16s ease-in-out infinite;opacity:0}
+                    .tit h2.t-9 {left: 759px; color: cornflowerblue;animation: ts-9 16s ease-in-out infinite;opacity:0}
+                    .tit h2.t-10 {left: 789px; color: cornsilk;animation: ts-10 16s ease-in-out infinite;opacity:0}
+                    .tit h2.t-12 {left: 830px; color: crimson;animation: ts-12 16s ease-in-out infinite;opacity:0}
+                    .tit h2.t-13 {left: 876px; color: cyan;animation: ts-13 16s ease-in-out infinite;opacity:0}
+                    .tit h2.t-14 {left: 945px; color: darkgreen;animation: ts-14 16s ease-in-out infinite;opacity:0}
+                    .tit h2.t-15 {left: 994px; color: darkmagenta;animation: ts-15 16s ease-in-out infinite;opacity:0}
+                    
+    }
+    @keyframes as-1 {10%  { opacity: 1}
+    50%  { opacity: 0}
+    100% { opacity: 1}
+
+    }
+    @keyframes as-2 {20%  { opacity: 1}}
+   
+    @keyframes as-3 {30%  { opacity: 1}}
+    @keyframes as-4 {40%  { opacity: 1}}
+    @keyframes as-5 {50%  { opacity: 1}}
+    @keyframes as-6 {60%  { opacity: 1}}
+    @keyframes as-7 {70%  { opacity: 1}}
+    
+
+    @keyframes ts-1 {10%  { opacity: 1}
+    }
+    @keyframes ts-2 {15%  { opacity: 1}}
+    @keyframes ts-3 {20%  { opacity: 1}}
+    @keyframes ts-4 {25%  { opacity: 1}}
+    @keyframes ts-5 {30%  { opacity: 1}}
+    @keyframes ts-6 {35%  { opacity: 1}}
+    @keyframes ts-7 {40%  { opacity: 1}}
+    @keyframes ts-8 {45%  { opacity: 1}}
+    @keyframes ts-9 {50%  { opacity: 1}}
+    @keyframes ts-10 {55%  { opacity: 1}}
+    @keyframes ts-12 {60%  { opacity: 1}}
+    @keyframes ts-13 {65%  { opacity: 1}}
+    @keyframes ts-14 {70%  { opacity: 1}}
+    @keyframes ts-15 {75%  { opacity: 1}}
+
+
+    
+               </style>
+            
+ 
+
+</head>
+<body>         
+          <div id="wrap">
+                <div class="tit">
+                          <h2 class="t-1">M</h2>
+                          <h2 class="t-2">E</h2>
+                          <h2 class="t-3">R</h2>
+                          <h2 class="t-4">R</h2>
+                          <h2 class="t-5">Y</h2>
+                          <h2 class="t-6">C</h2>
+                          <h2 class="t-7">H</h2>
+                          <h2 class="t-8">R</h2>
+                          <h2 class="t-9">I</h2>
+                          <h2 class="t-10">S</h2>
+                          <h2 class="t-12">T</h2>
+                          <h2 class="t-13">M</h2>
+                          <h2 class="t-14">A</h2>
+                          <h2 class="t-15">S</h2>
+
+                </div>
+                <div class='snow-container'>
+                <div class='snow foreground'></div>
+                <div class='snow foreground layered'></div>
+                <div class='snow middleground'></div>
+                <div class='snow middleground layered'></div>
+                <div class='snow background'></div>
+                <div class='snow background layered'></div>
+                </div>
+               <div class="bg1">
+                   <img src="image/crestock-1293599-2560x1600.png">
+               </div>
+               <div class="bg2">
+                <img src="image/cay-thong-giang-sinh-noel-3.png">
+                </div>
+                <div class="bg3">
+                    <img class="b-1" src="image/2_178283.png">
+                    <img class="b-2" src="image/2_178283.png">
+                    <img class="b-3" src="image/2_178283.png">
+                    <img class="b-4" src="image/2_178283.png">
+                    <img class="b-5" src="image/2_178283.png">
+                    <img class="b-6" src="image/2_178283.png">
+                    <img class="b-7" src="image/2_178283.png">
+                </div>
+                <div class="bg4">
+                    <img src="image/ong-gia-noel-2.png">
+                </div>
+            </div>
+
+          </div>
+
+</body>
+</html>
