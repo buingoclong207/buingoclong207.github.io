@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-       <style>
-              * {
+    <style>
+        * {
             margin: 0px;
             padding: 0px;
             border: 0px;
@@ -33,140 +37,697 @@
         a {
             text-decoration: none;
         }
-        #Wrap { width: 100%; height: 3189px; background-color: blue; }
-        .header { width: 100%; height:150px; background-color: blueviolet;}
-        .header .cl-1 {width: 56%;height:100%;background-color:cadetblue; float: left;}
-        .header .cl-1 .img {width: 30%;height:100%; padding: 38px 0 ; float: right;}
-        .header .cl-1 .img img {width: 100%;height:100%;}
-        .header .cl-2 {width: 40%;height:100%; float: left}
-        .header .search {width: 60%;height:50%;background-color:chocolate; float: left}
-        .header .search form input {    border-radius: 10px;
-    margin-top: 25px;
-    margin-left: 53px;
-    text-align: center;
-    border-radius: 10px;
-    padding: 8px;
-    width: 219px;
-}
-        .header .search form img {    width: 51px;
-    height: 38px;
-    position: absolute;
-    top: 22px;right:331px;
-   ;}
-        .header .cart {width: 40%;height:100%;background-color:cornflowerblue;float:right;padding: 28px;padding: 60px 100px;}
-        .header .cart img {width:100%;height:100%; }
-        .header .login {width: 60%;height:50%;background-color:chartreuse;float:left;}
-        .header .login .login-r {width: 61%;height:100%;float:right;}
-        .menu {width: 100%;height:43px; background-color: brown;}
-        .menu ul { width: 48% ;margin:0 auto; background-color: chocolate; position: relative;}
-        .menu ul li {float: left;}
-        .menu ul  ul {width: 18%; height:227px; background-color: chocolate;position: absolute;margin-top:3px; display: none}
-       
-        
-        .menu ul li a {font:400 20px/14px 'Georgia', serif; display: block; padding: 13px;}
-        .menu ul li:hover > ul {display: block;}
-        .navigation {width: 100%; height: 412px; background-color: burlywood;}
-        .navigation img {width: 100%; height: 100%;}
-        .content { width: 100%;height: 2036px;background-color:cadetblue;}
-        .content .recipes { width: 80%; height: 930px; background-color: blueviolet;margin:0 auto;}
-        .content .recipes .title { width: 100%;height:60px;background-color:chartreuse;}
-        .content .recipes-product-1 {width: 30%;height:378px; background-color: chocolate; float: left; margin: 2px;}
-        .content .our-blog {width: 80%; height: 520px; background-color: darkgoldenrod; margin: 0 auto;}
-        .content .our-product {width: 80%; height: 584px; background-color: darkgreen; margin: 0 auto;}
-        .footer {width:100%;height:100px;background-color:chartreuse;}
 
-        
+        #Wrap {
+            width: 100%;
+            height: 3189px;
+            background-color: blue;
+        }
 
-       </style>
+        .header {
+            width: 100%;
+            height: 150px;
+            background-color: blueviolet;
+        }
+
+        .header .cl-1 {
+            width: 56%;
+            height: 100%;
+            background-color: cadetblue;
+            float: left;
+        }
+
+        .header .cl-1 .img {
+            width: 30%;
+            height: 100%;
+            padding: 38px 0;
+            float: right;
+        }
+
+        .header .cl-1 .img img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .header .cl-2 {
+            width: 40%;
+            height: 100%;
+            float: left
+        }
+
+        .header .search {
+            width: 60%;
+            height: 50%;
+            background-color: chocolate;
+            float: left
+        }
+
+        .header .search form input {
+            border-radius: 10px;
+            margin-top: 25px;
+            margin-left: 53px;
+            text-align: center;
+            border-radius: 10px;
+            padding: 8px;
+            width: 219px;
+        }
+
+        .header .search form img {
+            width: 51px;
+            height: 38px;
+            position: absolute;
+            top: 22px;
+            right: 331px;
+            ;
+        }
+
+        .header .cart {
+            width: 40%;
+            height: 100%;
+            background-color: cornflowerblue;
+            float: right;
+            padding: 28px;
+            padding: 60px 100px;
+        }
+
+        .header .cart img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .header .login {
+            width: 60%;
+            height: 50%;
+            background-color: chartreuse;
+            float: left;
+        }
+
+        .header .login .login-r {
+            width: 61%;
+            height: 100%;
+            float: right;
+        }
+
+        .menu {
+            width: 100%;
+            height: 46px;
+            border: 1px solid #DBDBDB;
+            background-color: #FFFFFF;
+        }
+
+        .menu ul.ul-c1 {
+            width: 48%;
+            margin: 0 auto;
+            position: relative;
+            background-color: #FFFFFF;
+        }
+
+        .menu ul.ul-c1 li.li-c1 {
+            float: left;
+        }
+
+        .menu ul.ul-c1 li.li-c1 ul.ul-c2 {
+            width: 100%;
+            height: 227px;
+            position: absolute;
+            margin-top: 3px;
+            background-color: #FFFFFF;
+            background-image: url(img/Untitled18.png);
+            background-repeat: no-repeat;
+            background-position: right;
+            background-size: 264px;
+            right: 1px;
+            display: none;
+        }
+
+        .menu ul.ul-c1 li.li-c1 ul.ul-c2 li.li-c2 {
+            width: 24%;
+            height: 100%;
+            float: left;
+            font-weight: bold;
+        }
+
+        .menu ul.ul-c1 li.li-c1 ul.ul-c2 li.li-c2 a {
+            color: #6A6A6A;
+        }
+
+        .menu ul.ul-c1 li.li-c1 ul.ul-c2 li.li-c2 ul.ul-c3 li.li-c3 a {
+            font-weight: 300;
+        }
+
+        .menu ul.ul-c1 li.li-c1 a {
+            display: block;
+            padding: 13px;
+            color: #6A6A6A;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 16px;
+            line-height: 17px;
+            text-transform: uppercase
+        }
+
+        .menu ul.ul-c1 li.li-c1:hover>ul.ul-c2 {
+            display: block;
+        }
+
+        .navigation {
+            width: 100%;
+            height: 412px;
+            background-color: burlywood;
+        }
+
+        .navigation img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .content {
+            width: 100%;
+            height: 2036px;
+            background-color: cadetblue;
+        }
+
+        .content .recipes {
+            width: 80%;
+            height: 930px;
+            background-color: blueviolet;
+            margin: 0 auto;
+        }
+
+        .content .recipes .title {
+            width: 100%;
+            height: 60px;
+            background-color: chartreuse;
+        }
+
+        .content .recipes .title h3 {
+            font-size: 18px;
+            padding: 18px;
+        }
+
+        .content .recipes-product-1 {
+            width: 33%;
+            height: 378px;
+            background-color: chocolate;
+            float: left;
+            padding: 36px;
+        }
+
+        .content .recipes-product-1 .img {
+            width: 100%;
+            background-color: seagreen;
+            height: 269px;
+            position: relative;
+        }
+
+        .content .recipes-product-1 .img .overflow {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0%;
+            left: 0%;
+            background-repeat: no-repeat;
+            display: none;
+        }
+
+        .content .recipes-product-1 .img .overflow .overflow-img {
+            position: absolute;
+            width: 100%;
+            
+            height: 100%;
+        }
+
+        .content .recipes-product-1 .img .overflow .overflow-info {
+            padding-top: 117px
+        }
+
+        .content .recipes-product-1 .img .overflow .overflow-info span {
+            display: block;
+            color: #FFFFFF;
+            font-size: 15px;
+            text-align: center;
+            font-family: "Georgia", sans-serif;
+            font-weight: 100;
+        }
+
+        .content .recipes-product-1 .img .overflow .overflow-img img {
+            width: 11%;
+            height: 12%;
+            position: absolute;
+            top: 74px;
+            left: 147px;
+        }
+
+        .content .recipes-product-1 .img .overflow .overflow-img img:hover {
+            opacity: 0.8
+        }
+
+        .content .recipes-product-1 .img:hover .overflow {
+            display: block;
+            opacity: 1
+        }
+
+        .img:hover  img.fi {
+            filter: brightness(23%)
+        } 
+
+        .content .recipes-product-1 img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .content .recipes-product-1 .info h3 a {
+            text-align: center;
+            padding: 8px;
+            color: #545454;
+            display: block;
+        }
+
+        .content .recipes-product-1 .info h3 a:hover {
+            color: #CD9764
+        }
+
+        .content .recipes-product-1 .info .rating {
+            width: 29%;
+            height: 31px;
+            margin: 0 auto;
+        }
+
+        .content .our-blog {
+            width: 80%;
+            height: 520px;
+            background-color: darkgoldenrod;
+            margin: 0 auto;
+        }
+        .content .our-blog .our-blog-tit { width: 100%;height:13%; background-color: brown;}
+        .content .our-blog .our-blog-tit h3  {    font-size: 18px;
+    padding: 18px;}
+    .content .our-blog .our-blog-content {width: 100%; height: 86%; background-color: chartreuse;display: flex; align-items: center;}
+    .content .our-blog .our-blog-content .our-blog-content-cl { width: 27%; height: 84%;background-color:crimson; margin-left: 5%;}
+    .content .our-blog .our-blog-content .our-blog-content-cl .img {width: 100%; height: 50%;background-color:darkgreen;}
+    .content .our-blog .our-blog-content .our-blog-content-cl .img img {width: 100%;height:100%;}
+    .content .our-blog .our-blog-content .our-blog-content-cl .description {width: 100%; height: 50%; }
+    .content .our-blog .our-blog-content .our-blog-content-cl .description h3 {padding: 10px;}
+    .content .our-blog .our-blog-content .our-blog-content-cl .description .post-meta {width: 100%;height:20%;background-color:deeppink;}
+    .content .our-blog .our-blog-content .our-blog-content-cl .description .post-meta .img {width: 50% ; height: 100%; float: left; padding: 6px;}
+    .content .our-blog .our-blog-content .our-blog-content-cl .description .post-meta .cmt { width: 50%; height: 100%; float: left;  display: flex; align-items: center;}
+    .content .our-blog .our-blog-content .our-blog-content-cl .description p { font-size: 16px; padding: 11px 0; }
+    .content .our-blog .our-blog-content .our-blog-content-cl .description span { display:block; padding: 5px;}
+    .content .our-blog .our-blog-content .our-blog-content-cl .description span a { color: #bf9764}
+    
+        .content .our-product {
+            width: 80%;
+            height: 584px;
+            background-color: darkgreen;
+            margin: 0 auto;
+        }
+        .content .our-product .tit {width: 100%;height:10%; background-color: deepskyblue;}
+        .content .our-product .tit h3 { padding: 18px; font-size:18px; }
+        .content .our-product .special-product {width: 21%;height: 63%;background-color: gold; float: left; margin: 3% 2%;}
+        .content .our-product .special-product .img { width: 100%;height: 60%;background-color: darkred;}
+        .content .our-product .special-product .img img { width: 100%; height: 100%;}
+        .content .our-product .info-product {width: 100%; height: 40%;}
+        .content .our-product .info-product p {text-align: center; padding-top:10px; }
+        .content .our-product .info-product span {display: block; text-align: center; padding: 6px;}
+        .content .our-product .info-product .btn-cart { text-align: center; }
+        .content .our-product .info-product .btn-cart a { padding:5px 18px; background-color: #bf9764; color:#FFFFFF;}
+        .footer {
+            width: 80%;
+            height: 100px;
+            background-color: chartreuse; margin: 0 auto;
+        }
+        .footer .ft-cl1 {width: 25%;height:100%; background-color: blue; float: left;}
+        .footer .ft-cl2 {width: 25%;height:100%; background-color: blueviolet;float: left;}
+        .footer .ft-cl3 {width: 25%;height:100%; background-color: brown;float: left;}
+        .footer .ft-cl4 {width: 25%;height:100%; background-color: black;float: left;}
+    </style>
 </head>
+
 <body>
-         <div class="wrap">
-                  <div class="header">
-                         <div class="cl-1">
-                             <div class="img">
-                                   <img src="img/Untitled17.png">
-                             </div>
-                         </div>
-                         <div class="cl-2">
-                             <div class="search">
-                                <form >
-                                    <input type="text" name="search" />
-                                    <img src="img/search-icon-2-614x460.png">
-                                 </form>
-                             </div>
-                             
-                             <div class="cart">
-                                 <img src="img/shopping-cart-7.png">
-                             </div>
-                             <div class="login">
-                                 <div class="login-r">
-                                  <a href="#">LOGIN  </a><span>OR</span> <a href="#">  SINGUP</a>
-                                </div>
-                             </div>
-                         </div>
-                  </div>
-                  <div class="menu">
-                         <ul>
-                             <li><a href="#">Home</a></li>
-                             <li><a href="#">Blog</a></li>
-                             <li><a href="#">Shop</a>
-                            
-                             <li><a href="#">Recipes</a>
-                                <ul>
-                                    <li><a href="#">CUISINES</a> </li>
-                                    <li><a href="#">CUISINES</a> </li>
-                                    <li><a href="#">CUISINES</a> </li>
-                                    <li><a href="#">CUISINES</a> </li>
-                                    
+    <div class="wrap">
+        <div class="header">
+            <div class="cl-1">
+                <div class="img">
+                    <img src="img/Untitled17.png">
+                </div>
+            </div>
+            <div class="cl-2">
+                <div class="search">
+                    <form>
+                        <input type="text" name="search" />
+                        <img src="img/search-icon-2-614x460.png">
+                    </form>
+                </div>
+
+                <div class="cart">
+                        <i class="fas fa-cart-plus"></i>
+                </div>
+                <div class="login">
+                    <div class="login-r">
+                        <a href="#">LOGIN </a><span>OR</span> <a href="#"> SINGUP</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="menu">
+            <ul class="ul-c1">
+                <li class="li-c1"><a href="#">Home</a></li>
+                <li class="li-c1"><a href="#">Blog</a></li>
+                <li class="li-c1"><a href="#">Shop</a>
+
+                    <li class="li-c1"><a href="#">Recipes </a>
+                        <ul class="ul-c2">
+                            <li class="li-c2"><a href="#">CUISINES</a>
+                                <ul class="ul-c3">
+                                    <li class="li-c3"><a href="#">American</a></li>
+                                    <li class="li-c3"><a href="#">China</a></li>
+                                    <li class="li-c3"><a href="#">Japan</a></li>
+                                    <li class="li-c3"><a href="#">Italian</a></li>
                                 </ul>
                             </li>
-                             <li><a href="#">Submit Recipes</a></li>
-                         </ul>
-                  </div>
-                  <div class="navigation">
-                       <img src="img/Untitled.png">
-                  </div>
-                  <div class="content">
-                        <div class="recipes">
-                                  <div class="title">Tit</div>
-                                  <div class="recipes-product-1">
-                                              <div class="img"></div>
-                                              <div class="info"></div>
+                            <li class="li-c2"><a href="#">Recipe Types</a>
+                                <ul class="ul-c3">
+                                    <li class="li-c3"><a href="#">Lunch</a></li>
+                                    <li class="li-c3"><a href="#">Dinner</a></li>
+                                    <li class="li-c3"><a href="#">Chocolate</a></li>
+                                    <li class="li-c3"><a href="#">Breakfast</a></li>
+                                </ul>
+                            </li>
+                            <li class="li-c2"><a href="#">Skil Lever</a>
+                                <ul class="ul-c3">
+                                    <li class="li-c3"><a href="#">Easy</a></li>
+                                    <li class="li-c3"><a href="#">Edvanced</a></li>
+                                    <li class="li-c3"><a href="#">Beginner</a></li>
+                                    <li class="li-c3"><a href="#">Expert</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="li-c1"><a href="#">Submit Recipes</a></li>
+            </ul>
+        </div>
+        <div class="navigation">
+            <img src="img/Untitled7.png">
+        </div>
+        <div class="content">
+            <div class="recipes">
+                <div class="title">
+                    <h3>Recipe</h3>
+                </div>
+                <div class="recipes-product-1">
+                    <div class="img">
+                        <a href="#">
+                            <img class="fi" src="img/Untitled3.png">
+                        </a>
+                        <div class="overflow">
+                            
+                                <div class="overflow-img">
+                                     <a href="#"><img src="img/Untitled22.png"></a>
+                                </div>
+                                <div class="overflow-info">
+                                <span>Yeld : 2 bake</span>
+                                <span>Serving : 2 people</span>
+                                <span>Cook Time :20 min</span>
 
-                                  </div>
+                                </div>
+                    
+                        </div>
+                    </div>
+                    <div class="info">
+                        <h3><a href="#">The Coffeebreak</a></h3>
+                        <div class="rating">
+                            <a href="#">
+                                <img src="img/Untitled21.png">
+                            </a>
+                        </div>
+                    </div>
 
-                                  <div class="recipes-product-1">
-                                        <div class="img"></div>
-                                        <div class="info"></div>
+                </div>
 
+                <div class="recipes-product-1">
+                    <div class="img"> <a href="#"><img class="fi" src="img/Untitled4.png"></a>
+                        <div class="overflow">
+                            
+                                <div class="overflow-img">
+                                     <a href="#"><img src="img/Untitled22.png"></a>
+                                </div>
+                                <div class="overflow-info">
+                                <span>Yeld : 2 bake</span>
+                                <span>Serving : 2 people</span>
+                                <span>Cook Time :20 min</span>
+
+                                </div>
+                    
+                        </div>
+                    
+                    </div>
+                    <div class="info">
+                         <h3><a href="#">The Coffeebreak</a></h3>
+                            <div class="rating">
+                                <a href="#">
+                                    <img src="img/Untitled21.png">
+                                </a>
                             </div>
-                            <div class="recipes-product-1">
-                                    <div class="img"></div>
-                                    <div class="info"></div>
+
+                    </div>
+
+                </div>
+                <div class="recipes-product-1">
+                    <div class="img"> <a href="#"> <img class="fi" src="img/Untitled5.png"></a>
+                        <div class="overflow">
+                            
+                                <div class="overflow-img">
+                                     <a href="#"><img src="img/Untitled22.png"></a>
+                                </div>
+                                <div class="overflow-info">
+                                <span>Yeld : 2 bake</span>
+                                <span>Serving : 2 people</span>
+                                <span>Cook Time :20 min</span>
+
+                                </div>
+                    
+                        </div>
+                    
+                    </div>
+                    <div class="info">
+                            <h3><a href="#">The Coffeebreak</a></h3>
+                            <div class="rating">
+                                <a href="#">
+                                    <img src="img/Untitled21.png">
+                                </a>
+                            </div>
+
+                    </div>
+
+                </div>
+                <div class="recipes-product-1">
+                    <div class="img"> <a href="#"> <img class="fi" src="img/Untitled6.png"></a>
+                        <div class="overflow">
+                            
+                        <div class="overflow-img">
+                             <a href="#"><img src="img/Untitled22.png"></a>
+                        </div>
+                        <div class="overflow-info">
+                        <span>Yeld : 2 bake</span>
+                        <span>Serving : 2 people</span>
+                        <span>Cook Time :20 min</span>
 
                         </div>
-                        <div class="recipes-product-1">
-                                <div class="img"></div>
-                                <div class="info"></div>
+            
+                </div>
+                    </div>
+                    <div class="info">
+                            <h3><a href="#">The Coffeebreak</a></h3>
+                            <div class="rating">
+                                <a href="#">
+                                    <img src="img/Untitled21.png">
+                                </a>
+                            </div>
+
+                    </div>
+
+                </div>
+                <div class="recipes-product-1">
+                    <div class="img"> <img class="fi" src="img/Untitled18.png">
+                        <div class="overflow">
+                            
+                                <div class="overflow-img">
+                                     <a href="#"><img src="img/Untitled22.png"></a>
+                                </div>
+                                <div class="overflow-info">
+                                <span>Yeld : 2 bake</span>
+                                <span>Serving : 2 people</span>
+                                <span>Cook Time :20 min</span>
+        
+                                </div>
+                    
+                        </div>
+                        
+                    </div>
+                    <div class="info">
+                            <h3><a href="#">The Coffeebreak</a></h3>
+                            <div class="rating">
+                                <a href="#">
+                                    <img src="img/Untitled21.png">
+                                </a>
+                            </div>
+                    </div>
+
+                </div>
+                <div class="recipes-product-1">
+                    <div class="img"> <img class="fi" src="img/Untitled8.png">
+                        <div class="overflow">
+                            
+                                <div class="overflow-img">
+                                     <a href="#"><img src="img/Untitled22.png"></a>
+                                </div>
+                                <div class="overflow-info">
+                                <span>Yeld : 2 bake</span>
+                                <span>Serving : 2 people</span>
+                                <span>Cook Time :20 min</span>
+        
+                                </div>
+                    
+                        </div>
+                    </div>
+                    <div class="info">
+                            <h3><a href="#">The Coffeebreak</a></h3>
+                            <div class="rating">
+                                <a href="#">
+                                    <img src="img/Untitled21.png">
+                                </a>
+                            </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="our-blog">
+                  <div class="our-blog-tit">
+                      <h3>Our Blog</h3>
+                  </div>
+                  <div class="our-blog-content">
+                         <div class="our-blog-content-cl">
+                                <div class="img">
+                                    <img src="img/Untitled9.png">
+                                </div>
+                                <div class="description">
+                                    <h3>Candy Canes Wafer Sweet Roll 2</h3>
+                                    <div class="post-meta">
+                                        <div class="img">
+                                           <img src="img/Untitled23.png">
+                                        </div>  
+                                        <div class="cmt" >
+                                           <span>0 Comments</span>
+                                        </div>   
+                                    </div>
+                                    <p>Tart muffin powder icing. Oat cake tart cheesecake sugar plum cotton candy. Wafer jelly oat...</p>
+                                    <span><a href="#">Read More</a></span>
+                                </div>
 
                          </div>
-                         <div class="recipes-product-1">
-                            <div class="img"></div>
-                            <div class="info"></div>
+                         <div class="our-blog-content-cl">
+                                <div class="img">
+                                    <img src="img/Untitled9.png">
+                                </div>
+                                <div class="description">
+                                    <h3>Candy Canes Wafer Sweet Roll 2</h3>
+                                    <div class="post-meta">
+                                        <div class="img">
+                                           <img src="img/Untitled23.png">
+                                        </div>  
+                                        <div class="cmt" >
+                                           <span>0 Comments</span>
+                                        </div>   
+                                    </div>
+                                    <p>Tart muffin powder icing. Oat cake tart cheesecake sugar plum cotton candy. Wafer jelly oat...</p>
+                                    <span><a href="#">Read More</a></span>
+                                </div>
 
-                          </div>
-                       <div class="recipes-product-1">
-                            <div class="img"></div>
-                           <div class="info"></div>
+                         </div>
+                         <div class="our-blog-content-cl">
+                                <div class="img">
+                                    <img src="img/Untitled9.png">
+                                </div>
+                                <div class="description">
+                                    <h3>Candy Canes Wafer Sweet Roll 2</h3>
+                                    <div class="post-meta">
+                                        <div class="img">
+                                           <img src="img/Untitled23.png">
+                                        </div>  
+                                        <div class="cmt" >
+                                           <span>0 Comments</span>
+                                        </div>   
+                                    </div>
+                                    <p>Tart muffin powder icing. Oat cake tart cheesecake sugar plum cotton candy. Wafer jelly oat...</p>
+                                    <span><a href="#">Read More</a></span>
+                                </div>
 
-                            </div>
-                        </div>
-                       
-                        
-                        <div class="our-blog"></div>
-                        <div class="our-product"></div>
+                         </div>
+
                   </div>
-                  <div class="footer"></div>
-         </div>
+            </div>
+            <div class="our-product">
+                      <div class="tit">
+                               <h3>Our Products</h3>
+                      </div>
+                      <div class="special-product">
+                               <div class="img">
+                                    <img src="img/Untitled14.png">
+                               </div>
+                               <div class="info-product">
+                                       <p>Parmesan Stickss </p>
+                                       <span> £ 15.00</span>
+                                       <div class="btn-cart">
+                                            <a href="#">Add to cart</a>
+                                       </div>
+                               </div>
+                      </div>
+                      <div class="special-product">
+                            <div class="img">
+                                 <img src="img/Untitled14.png">
+                            </div>
+                            <div class="info-product">
+                                    <p>Parmesan Stickss </p>
+                                    <span> £ 15.00</span>
+                                    <div class="btn-cart">
+                                         <a href="#">Add to cart</a>
+                                    </div>
+                            </div>
+                   </div>
+                   <div class="special-product">
+                        <div class="img">
+                             <img src="img/Untitled14.png">
+                        </div>
+                        <div class="info-product">
+                                <p>Parmesan Stickss </p>
+                                <span> £ 15.00</span>
+                                <div class="btn-cart">
+                                     <a href="#">Add to cart</a>
+                                </div>
+                        </div>
+               </div>
+               <div class="special-product">
+                    <div class="img">
+                         <img src="img/Untitled14.png">
+                    </div>
+                    <div class="info-product">
+                            <p>Parmesan Stickss </p>
+                            <span> £ 15.00</span>
+                            <div class="btn-cart">
+                                 <a href="#">Add to cart</a>
+                            </div>
+                    </div>
+           </div>
+            </div>
+        </div>
+        <div class="footer">
+             <div class="ft-cl1"></div>
+             <div class="ft-cl2"></div>
+             <div class="ft-cl3"></div>
+             <div class="ft-cl4"></div>
+        </div>
+    </div>
 </body>
+
 </html>
