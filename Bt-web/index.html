@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <title>Document</title>
     <style>
         * {
@@ -762,7 +763,7 @@
         .music-h .music-m-bh .info p a {color:#1F1F1F }
         .music-h .music-m-bh .info span a {color: #A6A6A6} 
 
-        .play { width: 100%;height:66px;background-color:#363C43; position: fixed; bottom:0 ; left: o }
+        .play { width: 100%;height:66px;background-color:#363C43; position: fixed; bottom:0 ; left: o ;     z-index: 999;}
         .play .img {width: 30%;height:100%;  float: left }
               .play .img .img-artist {width: 16% ; float: left;height: 100%;}
               .play .img .img-artist img {width: 100%;height:100%;}
@@ -773,8 +774,23 @@
               .play .img .like {width: 4%; height: 100%; float: left;}
               .play .img .like img {width: 100%;height:100%; padding: 25px 0;}
               .play .img .like img:hover {opacity: 0.5}
-        .play .btn{width: 40%; height:100%; background-color: blueviolet; float: left}
-        .play .time {width: 30%; height:100%; background-color: brown;float: left }
+        .play .btn{width: 40%; height:100%;  float: left}
+        .play .btn .shuffler {padding: 13px 171px; width: 100%; height: 100%;}
+        .play .btn .shuffler i { font-size: 26px; padding: 9px;}
+        
+        .play .time {width: 30%; height:100%;float: left;padding: 13px; }
+        .play .time .time-h {    width: 28%;
+    height: 100%;
+    float: left;
+    padding: 14px;} 
+    .play .time .time-h span {color: #B0B3B5;}
+   
+        .play .time .time-k {    width: 30%;
+    float: left;
+    height: 100%;}
+    .play .time .time-k i { padding: 9px;
+    color: #8D9195;
+    font-size: 26px;}
         
     </style>
 </head>
@@ -1241,9 +1257,18 @@
                   
             </div>
             <div class="btn">
-                     <div class=""
+                  <div class="shuffler">
+                         <a href="#"><i class="fas fa-random" style="color: #8D9195"></i></a>
+                         <a href="#"><i class="fas fa-step-backward" style="color:#E5E6E7"></i></a>
+                         <a href="#"><i class="fas fa-play-circle" style="color:#02b875; "></i></a>
+                         <a href="#"><i class="fas fa-forward" style="color:#E5E6E7"></i></a>
+                         <a href="#"><i class="fas fa-redo-alt" style="color: #8D9195"></i></a>
+                  </div>
             </div>
-            <div class="time"></div>
+            <div class="time">
+                 <div class="time-h"><span>00:00 / 00:00</span></div>
+                <div class="time-k"><a href="#"><i class="fas fa-volume-off" style="color: #E5E6E7"></i></a></div>
+            </div>
             
         </div>
 
