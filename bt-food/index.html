@@ -16,7 +16,7 @@
             border: 0px;
             box-sizing: border-box;
         }
-
+        .clear { clear: both;}
         body {
             font-family: 'Times New Roman', Times, serif;
             font-size: 14px;
@@ -72,61 +72,28 @@
         .header .cl-2 {
             width: 44%;
             height: 100%;
-            float: left
+            float: left ;
+            background-color: #FFFFFF;display: flex;
         }
+        .header .cl-2 .fr {  width: 66%; height: 35%; margin: auto; }
+        .header .cl-2 .fr .fr-1 {width: 40%; height: 100%;  float: left;     display: flex;
+    align-items: center;
+    font-size: 20px;
+    justify-content: center;}
+    .header .cl-2 .fr .fr-1 .ls a {color:#B9B9B9; }
+    .header .cl-2 .fr .fr-1 .ls a:hover {color: #bf9764}
+    .header .cl-2 .fr .fr-1 a , .header .cl-2 .fr .fr-1 span {padding: 0 5px;}
+        .header .cl-2 .fr .fr-2 {width: 60%; height: 100%;  float: left; display: flex; align-items: center; font-size: 19px; }
+        .header .cl-2 .fr .fr-2 span { padding: 0 8px;}
 
-        .header .search {
-            width: 60%;
-            height: 50%;
-            background-color: #FFFFFF;
-            float: left
-        }
+        
 
-        .header .search form input {
-            border-radius: 10px;
-            margin-top: 25px;
-            margin-left: 53px;
-            text-align: center;
-            border: 1px solid #bf9764;
-            padding: 8px;
-            width: 219px;
-        }
+       
+        
 
-        .header .search form img {
-            width: 51px;
-            height: 38px;
-            position: absolute;
-            top: 22px;
-            right: 331px;
-            ;
-        }
+        
 
-        .header .cart {
-            width: 40%;
-            height: 100%;
-            background-color: #FFFFFF;
-            float: right;
-            padding: 28px;
-            padding: 60px 100px;
-        }
 
-        .header .cart i { font-size: 37px;
-            
-        }
-
-        .header .login {
-            width: 60%;
-            height: 50%;
-            background-color: #FFFFFF;
-            float: left;
-            padding: 0 80px;
-        }
-
-        .header .login .login-r {
-            width: 61%;
-            height: 100%;
-           
-        }
 
         .menu {
             width: 100%;
@@ -136,14 +103,16 @@
         }
 
         .menu ul.ul-c1 {
-            width: 48%;
+            width: 40%;
             margin: 0 auto;
             position: relative;
             background-color: #FFFFFF;
+            
         }
 
         .menu ul.ul-c1 li.li-c1 {
             float: left;
+            border-right: 1px solid #DBDBDB
         }
         .menu ul.ul-c1 li.li-c1 a.active {color:#bf9764 }
         .menu ul.ul-c1 li.li-c1 a:hover {color:#bf9764}
@@ -151,7 +120,7 @@
             width: 100%;
             height: 227px;
             position: absolute;
-            margin-top: 3px;
+            margin-top: 2px;
             background-color: #FFFFFF;
             background-image: url(img/Untitled18.png);
             background-repeat: no-repeat;
@@ -159,6 +128,7 @@
             background-size: 264px;
             right: 1px;
             display: none;
+            z-index: 2
         }
 
         .menu ul.ul-c1 li.li-c1 ul.ul-c2 li.li-c2 {
@@ -193,9 +163,11 @@
         .navigation {
             width: 100%;
             height: 412px;
-            background-color: #FFFFFF;
+            background-color: #FFFFFF; position: relative;
         }
-
+        .navigation a i {font-size: 100px;color: black;}
+        .navigation a.left i {position: absolute;top:136px;}
+        .navigation a.right i {position: absolute;top:136px; right: 1px; }
         .navigation img {
             width: 100%;
             height: 100%;
@@ -203,13 +175,14 @@
 
         .content {
             width: 100%;
-            height: 1932px;
+            height: 2000px;
             background-color: #FFFFFF;
+            border-bottom: 1px solid black;
         }
 
         .content .recipes {
             width: 80%;
-            height: 836px;
+            height: 838px;
             background-color: #FFFFFF;
             margin: 0 auto;
         }
@@ -218,6 +191,7 @@
             width: 100%;
             height: 60px;
             background-color: #FFFFFF;
+            border-bottom: 1px solid #DBDBDB
         }
 
         .content .recipes .title h3 {
@@ -312,54 +286,95 @@
             height: 31px;
             margin: 0 auto;
         }
+        .see {width: 89%;
+              height: 1px;
+                background-color: #a68356;
+                  margin: 21px 35px; position: relative;}
+        .see a { position: absolute; color: #a68356;
+
+    right: -47px;
+    bottom: -7px; font-size: 16; font-style: italic; }
+    .see a:hover {text-decoration: underline;}
 
         .content .our-blog {
             width: 80%;
             height: 520px;
             background-color: #FFFFFF;
-            margin: 0 auto;
+            margin: 20px auto;
         }
-        .content .our-blog .our-blog-tit { width: 100%;height:13%; }
+        .content .our-blog .our-blog-tit { width: 100%;height:13%;    border-bottom: 1px solid #DBDBDB }
         .content .our-blog .our-blog-tit h3  {    font-size: 18px;
     padding: 18px;}
-    .content .our-blog .our-blog-content {width: 100%; height: 86%; display: flex; align-items: center;}
+    .content .our-blog .our-blog-content {width: 100%; height: 87%; display: flex; align-items: center;}
     .content .our-blog .our-blog-content .our-blog-content-cl { width: 27%; height: 84%; margin-left: 5%;}
     .content .our-blog .our-blog-content .our-blog-content-cl .img {width: 100%; height: 50%;}
+    .content .our-blog .our-blog-content .our-blog-content-cl .img img:hover {filter:opacity(0.6)}
     .content .our-blog .our-blog-content .our-blog-content-cl .img img {width: 100%;height:100%;}
     .content .our-blog .our-blog-content .our-blog-content-cl .description {width: 100%; height: 50%; }
-    .content .our-blog .our-blog-content .our-blog-content-cl .description h3 {padding: 10px;}
+    .content .our-blog .our-blog-content .our-blog-content-cl .description h3 {padding: 10px;  font-size: 20px;font-weight: 100;}
+    .content .our-blog .our-blog-content .our-blog-content-cl .description a {color: #545454}
+    .content .our-blog .our-blog-content .our-blog-content-cl .description h3:hover {color:#bf9764 }
     .content .our-blog .our-blog-content .our-blog-content-cl .description .post-meta {width: 100%;height:20%;}
-    .content .our-blog .our-blog-content .our-blog-content-cl .description .post-meta .img {width: 50% ; height: 100%; float: left; padding: 6px;}
+    .content .our-blog .our-blog-content .our-blog-content-cl .description .post-meta .img {width: 38% ; height: 100%; float: left; padding: 11px;}
+    .content .our-blog .our-blog-content .our-blog-content-cl .description .post-meta .img i {float: right;}
     .content .our-blog .our-blog-content .our-blog-content-cl .description .post-meta .cmt { width: 50%; height: 100%; float: left;  display: flex; align-items: center;}
-    .content .our-blog .our-blog-content .our-blog-content-cl .description p { font-size: 16px; padding: 11px 0; }
-    .content .our-blog .our-blog-content .our-blog-content-cl .description span { display:block; padding: 5px;}
+    .content .our-blog .our-blog-content .our-blog-content-cl .description p { font-size: 16px; padding: 11px ; }
+    .content .our-blog .our-blog-content .our-blog-content-cl .description span { display:block; padding: 9px;}
     .content .our-blog .our-blog-content .our-blog-content-cl .description span a { color: #bf9764}
+    .content .our-blog .our-blog-content .our-blog-content-cl .description span a:hover {text-decoration: underline;}
     
         .content .our-product {
             width: 80%;
-            height: 584px;
+            height: 570px;
             background-color: #FFFFFF;
-            margin: 0 auto;
+            margin: 38px auto;
+            position: relative;
         }
-        .content .our-product .tit {width: 100%;height:10%; }
+        .content .our-product .tit {width: 100%;height:12%;    border-bottom: 1px solid #DBDBDB }
         .content .our-product .tit h3 { padding: 18px; font-size:18px; }
-        .content .our-product .special-product {width: 21%;height: 63%; float: left; margin: 3% 2%;}
-        .content .our-product .special-product .img { width: 100%;height: 60%;}
+        .content .our-product .special-product {width: 21%;height: 70%; float: left; margin: 3% 2% 0 2%; position: relative;}
+        .content .our-product .special-product .sale {width: 50px;
+    background-color: red;
+    height: 50px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    top: -24px;
+    right: -19px;}
+    .content .our-product .special-product .sale span {width: 100% ; display: block; color: #FFFFFF;} 
+        .content .our-product .special-product .img { width: 100%;height: 75%;}
         .content .our-product .special-product .img img { width: 100%; height: 100%;}
-        .content .our-product .info-product {width: 100%; height: 40%;}
-        .content .our-product .info-product p {text-align: center; padding-top:10px; }
-        .content .our-product .info-product span {display: block; text-align: center; padding: 6px;}
-        .content .our-product .info-product .btn-cart { text-align: center; }
-        .content .our-product .info-product .btn-cart a { padding:5px 18px; background-color: #bf9764; color:#FFFFFF;}
+        .content .our-product .special-product .img img:hover {opacity: 0.8;}
+        .content .our-product  a.right-2 i {    font-size: 36px;
+    color: #ABA8A7;
+    background-color: #E0D2CC; position: absolute ;
+    padding: 6px 12px;    top: 230px;
+    right: 1px;}
+    .content .our-product  a.left-2 i {    font-size: 36px;
+    color: #ABA8A7;
+    background-color: #E0D2CC;
+    padding: 6px 12px; position: absolute;top: 230px;
+    left: 1px;}
+    .content .our-product  a i:hover {opacity: 0.8;}
+        .content .our-product .info-product {width: 100%; height: 25%;}
+        .content .our-product .info-product p {text-align: center; padding-top:10px; color: #545454 }
+        .content .our-product .info-product span {display: block; text-align: center; padding: 6px; color: #545454} 
+        .content .our-product .info-product a:hover span { color:#bf9764 }
+        .content .our-product .info-product .btn-cart { text-align: center;  margin-top: 10px; }
+        .content .our-product .info-product .btn-cart a { padding:8px 18px; background-color: #bf9764; color:#FFFFFF;}
+        .content .our-product .info-product .btn-cart a:hover {background-color: #af9067}
         .footer {
-            width: 80%;
-            height: 100px;
-            background-color: chartreuse; margin: 0 auto;
+            width: 100%;
+            height: 60px;
+            background-color: #262626; color: #B9B9B9; font-size: 16px;
+            display: flex;
+    justify-content: center;
+    align-items: center;
         }
-        .footer .ft-cl1 {width: 25%;height:100%; background-color: blue; float: left;}
-        .footer .ft-cl2 {width: 25%;height:100%; background-color: blueviolet;float: left;}
-        .footer .ft-cl3 {width: 25%;height:100%; background-color: brown;float: left;}
-        .footer .ft-cl4 {width: 25%;height:100%; background-color: black;float: left;}
+    
+        
     </style>
 </head>
 
@@ -372,26 +387,29 @@
                 </div>
             </div>
             <div class="cl-2">
-                <div class="search">
-                    <form>
-                        <input type="text" name="search" />
-                        <img src="img/search-icon-2-614x460.png">
-                    </form>
-                </div>
-
-                <div class="cart">
-                        <i class="fas fa-cart-plus"></i>
-                </div>
-                <div class="login">
-                    <div class="login-r">
-                        <a href="#">LOGIN </a><span>OR</span> <a href="#"> SINGUP</a>
-                    </div>
-                </div>
+                     <div class="fr">  
+                             <div class="fr-1">
+                                     <div class="ls">
+                                            <a href="#">Login</a><span>Or</span><a href="#">Signup</a>
+                                    </div>
+                             </div>
+                             <div class="fr-2">
+                                  <span>
+                                        <a href="#"><i class="fas fa-shopping-cart" style="padding: 8px; border-radius:100%; background-color: #bf9764;color:#FFFFFF;"></i></a>
+                                  </span>
+                                  <span>£ 15.00</span>
+                                  <span>(1Item )</span>
+                                  <span>
+                                        <a href="#"><i class="fas fa-search" style="padding: 8px;background-color:#bf9764;color:#FFFFFF;"></i></a>
+                                    </span>
+                             </div>
+                             
+                     </div>
             </div>
         </div>
         <div class="menu">
             <ul class="ul-c1">
-                <li class="li-c1"><a class="active" href="#">Home</a></li>
+                <li class="li-c1" style="border-left: 1px solid #DBDBDB "><a class="active" href="#">Home</a></li>
                 <li class="li-c1"><a href="#">Blog</a></li>
                 <li class="li-c1"><a href="#">Shop</a>
 
@@ -428,6 +446,8 @@
         </div>
         <div class="navigation">
             <img src="img/Untitled7.png">
+            <a href="#" class="left"><i class="fas fa-angle-left"></i></a>
+            <a href="#" class="right"><i class="fas fa-angle-right"></i></a>
         </div>
         <div class="content">
             <div class="recipes">
@@ -457,11 +477,15 @@
                         <h3><a href="#">The Coffeebreak</a></h3>
                         <div class="rating">
                             <a href="#">
-                                <img src="img/Untitled21.png">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
                             </a>
                         </div>
                     </div>
-
+                       
                 </div>
 
                 <div class="recipes-product-1">
@@ -485,7 +509,11 @@
                          <h3><a href="#">The Coffeebreak</a></h3>
                             <div class="rating">
                                 <a href="#">
-                                    <img src="img/Untitled21.png">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
                                 </a>
                             </div>
 
@@ -513,7 +541,11 @@
                             <h3><a href="#">The Coffeebreak</a></h3>
                             <div class="rating">
                                 <a href="#">
-                                    <img src="img/Untitled21.png">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
                                 </a>
                             </div>
 
@@ -540,7 +572,11 @@
                             <h3><a href="#">The Coffeebreak</a></h3>
                             <div class="rating">
                                 <a href="#">
-                                    <img src="img/Untitled21.png">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
                                 </a>
                             </div>
 
@@ -568,7 +604,11 @@
                             <h3><a href="#">The Coffeebreak</a></h3>
                             <div class="rating">
                                 <a href="#">
-                                    <img src="img/Untitled21.png">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
                                 </a>
                             </div>
                     </div>
@@ -594,12 +634,19 @@
                             <h3><a href="#">The Coffeebreak</a></h3>
                             <div class="rating">
                                 <a href="#">
-                                    <img src="img/Untitled21.png">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
                                 </a>
                             </div>
                     </div>
-
+                    
                 </div>
+                <div class="clear"></div>
+                <div class="see"><a href="#">See All</a></div>
+                
             </div>
 
 
@@ -610,13 +657,13 @@
                   <div class="our-blog-content">
                          <div class="our-blog-content-cl">
                                 <div class="img">
-                                    <img src="img/Untitled9.png">
+                                   <a href="#"><img src="img/Untitled9.png"></a>
                                 </div>
                                 <div class="description">
-                                    <h3>Candy Canes Wafer Sweet Roll 2</h3>
+                                    <a href="#"><h3>Candy Canes Wafer Sweet Roll 2</h3></a>
                                     <div class="post-meta">
                                         <div class="img">
-                                           <img src="img/Untitled23.png">
+                                            <i class="far fa-calendar-alt"> May 19 ,2016 |</i>
                                         </div>  
                                         <div class="cmt" >
                                            <span>0 Comments</span>
@@ -629,44 +676,45 @@
                          </div>
                          <div class="our-blog-content-cl">
                                 <div class="img">
-                                    <img src="img/Untitled9.png">
+                                        <a href="#"><img src="img/Untitled10.png"></a>
                                 </div>
                                 <div class="description">
-                                    <h3>Candy Canes Wafer Sweet Roll 2</h3>
+                                    <a href="#"><h3>Bonbon Toffee Jelly</h3></a>
                                     <div class="post-meta">
                                         <div class="img">
-                                           <img src="img/Untitled23.png">
+                                            <i class="far fa-calendar-alt"> May 19 ,2016 |</i>
                                         </div>  
                                         <div class="cmt" >
                                            <span>0 Comments</span>
                                         </div>   
                                     </div>
-                                    <p>Tart muffin powder icing. Oat cake tart cheesecake sugar plum cotton candy. Wafer jelly oat...</p>
+                                    <p>Bonbon toffee jelly beans cupcake gingerbread sweet roll chocolate cake croissant fruitcake. Chocolate sugar plum..</p>
                                     <span><a href="#">Read More</a></span>
                                 </div>
 
                          </div>
                          <div class="our-blog-content-cl">
                                 <div class="img">
-                                    <img src="img/Untitled9.png">
+                                  <a href="#"> <img src="img/Untitled11.png"></a>
                                 </div>
                                 <div class="description">
-                                    <h3>Candy Canes Wafer Sweet Roll 2</h3>
+                                    <a href="#"><h3>Cheesecake Pastry Marshmallow</h3></a>
                                     <div class="post-meta">
                                         <div class="img">
-                                           <img src="img/Untitled23.png">
+                                            <i class="far fa-calendar-alt"> May 19 ,2016 |</i>
                                         </div>  
                                         <div class="cmt" >
                                            <span>0 Comments</span>
                                         </div>   
                                     </div>
-                                    <p>Tart muffin powder icing. Oat cake tart cheesecake sugar plum cotton candy. Wafer jelly oat...</p>
+                                    <p>Ice cream sweet roll candy applicake marzipan chocolate cake caramels. Liquorice wypas gummi bears muffin...</p>
                                     <span><a href="#">Read More</a></span>
                                 </div>
 
                          </div>
-
                   </div>
+                  <div class="clear"></div>
+                <div class="see"><a href="#">See All</a></div>
             </div>
             <div class="our-product">
                       <div class="tit">
@@ -674,11 +722,15 @@
                       </div>
                       <div class="special-product">
                                <div class="img">
-                                    <img src="img/Untitled14.png">
+                                   <a href="#">
+                                    <img src="img/Untitled12.png">
+                                    </a>
                                </div>
                                <div class="info-product">
+                                    <a href="#">
                                        <p>Parmesan Stickss </p>
                                        <span> £ 15.00</span>
+                                    </a>   
                                        <div class="btn-cart">
                                             <a href="#">Add to cart</a>
                                        </div>
@@ -686,11 +738,15 @@
                       </div>
                       <div class="special-product">
                             <div class="img">
-                                 <img src="img/Untitled14.png">
+                                    <a href="#">
+                                            <img src="img/Untitled13.png">
+                                            </a>
                             </div>
                             <div class="info-product">
+                                <a href="#">
                                     <p>Parmesan Stickss </p>
                                     <span> £ 15.00</span>
+                                </a>    
                                     <div class="btn-cart">
                                          <a href="#">Add to cart</a>
                                     </div>
@@ -698,11 +754,15 @@
                    </div>
                    <div class="special-product">
                         <div class="img">
-                             <img src="img/Untitled14.png">
+                                <a href="#">
+                                        <img src="img/Untitled14.png">
+                                        </a>
                         </div>
                         <div class="info-product">
+                            <a href="#">
                                 <p>Parmesan Stickss </p>
                                 <span> £ 15.00</span>
+                            </a>    
                                 <div class="btn-cart">
                                      <a href="#">Add to cart</a>
                                 </div>
@@ -710,23 +770,30 @@
                </div>
                <div class="special-product">
                     <div class="img">
-                         <img src="img/Untitled14.png">
+                         <img src="img/Untitled15.png">
                     </div>
                     <div class="info-product">
+                        <a href="#">
                             <p>Parmesan Stickss </p>
-                            <span> £ 15.00</span>
+                            <span style=" text-decoration: line-through;
+                            display: inline-block;
+                            padding-left: 77px; color: #ABA8A7;"> £ 15.00</span><span style="display: inline-block;">£ 10.00</span>
+                        </a>    
                             <div class="btn-cart">
                                  <a href="#">Add to cart</a>
                             </div>
                     </div>
+                    <div class="sale" ><span>Sales!</span></div>
            </div>
+           <a href="#" class="right-2"><i class="fas fa-angle-right"></i></a> 
+           <a href="#" class="left-2"><i class="fas fa-angle-left"></i></a>
             </div>
+            
         </div>
         <div class="footer">
-             <div class="ft-cl1"></div>
-             <div class="ft-cl2"></div>
-             <div class="ft-cl3"></div>
-             <div class="ft-cl4"></div>
+                © 2018 Food & Cook. All Rights Reserved.
+
+
         </div>
     </div>
 </body>
