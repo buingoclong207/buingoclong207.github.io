@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script  >
+          //Bài 1
+        function bai1 (a) {
+           a = a*a
+           document.write("Câu 1 : "+"KQ :" + a + "<br/>" )
+           return a;
+        }
+          /*VD  */ bai1(9)
+
+
+         //Bài 2
+        function bai2(a,b,c) {
+            a = 3*a ;
+           b = 2*b;
+            c = 1*c;
+          tong= a + b - c;
+         tinh = tong*tong
+          document.write("Câu 2 : "+"KQ :" + tinh + "<br/>")
+         return tinh
+        }  /*VD  */ bai2(3,4,5)
+
+
+         //Bài 3
+        function bai3 (a) {
+         var b =  a.slice(0,10) +"..." 
+         document.write("Câu 3 : "+"Chuỗi lấy : " + b +"..."+ "<br/>")
+        return b
+        }   /*VD  */ bai3("Cho 1 chuỗi dài hơn 30 ký tự. Viết 1 function cắt chuỗi, lấy ra 10 ký tự đầu")
+
+
+         //Bài 4
+        function bai4 (a) {
+            
+            var b =a.slice(0,1);
+           var c =b.toUpperCase();
+            var d =a.replace( b , c );
+            document.write("Câu 4 : "+" Ký tự đầu viết hoa  : " + d + "<br/>")
+            return d
+        } /*VD  */ bai4("welcome to techmaster");
+
+
+        //Bài 5
+        function bai5(a) {
+            
+           function ham(b,c) {
+                return  b-c;
+           }
+           var d = a.sort(ham) ;
+           var e =d.slice(0,1)
+           document.write("Câu 5 : "+" Số bé nhất : " + e + "<br/>")
+        return e
+        } /*VD  */ bai5([7,8,98,34,5,6])
+
+
+         //Bài 6
+        function bai6(a) {
+            var b = a.sort()
+            document.write("Câu 6 : "+"Thứ tự: " + b +"<br/>")
+            return b ;
+        }/*VD  */ bai6(["Nam","Long","Tiến","Hoàng"])
+        
+        
+         //Bài 7
+ var teacher = {
+            firstName: "Kim",
+            lastName: "Dung",
+            age: 30,
+            say: function(){}
+            
+             }
+            
+
+
+  var parent = {
+            firstName: "Kim",
+            lastName: "Cô",
+            age: 20,
+            say: function(){}
+            
+             }
+            
+          
+var student = {
+            firstName: "Kim",
+            lastName: "con",
+            age: 10,
+            say: function(){}
+            
+             }
+            
+    function aboutMe(){
+
+document.write("Câu 7 "+" Xin Chào , Tôi là "+ this.firstName+" "+this.lastName+". Năm nay tôi 30 tuổi")
+}           
+ teacher.say= aboutMe;
+ parent.say= aboutMe;
+student.say= aboutMe;
+/*VD  */ teacher.say()
+
+
+
+        
+        
+          
+
+
+        
+    
+        
+             
+             
+
+
+
+
+
+
+ 
+        
+       
+      
+
+        
+    </Script>
+</head>
+<body>
+    
+</body>
+</html>
