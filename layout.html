@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            border: 0px;
+            box-sizing: border-box;
+        }
+
+        #wrap {
+            width: 100%;
+        }
+
+        .div-1 {
+            width: 100%;
+            background-color: brown;
+            height: 40px;
+        }
+
+        .div-2 {
+            width: 100%;
+            
+            height: 1200px;
+            padding: 0 10%
+        }
+
+        .div-3 {
+            width: 100%;
+            
+            height: 100%;
+            margin: auto;
+        }
+
+        .div-4 {
+            width: 100%;
+            
+            height: 9%;
+
+        }
+
+        .div-4 .left {
+            width: 50%;
+            height: 100%;
+            
+            float: left;
+            padding: 1%
+        }
+
+        .div-4 .left .left-c {
+            width: 100%;
+            height: 100%;
+            background-color: #d8d8d8
+        }
+
+
+        .div-4 .right {
+            
+            height: 100%;
+            width: 50%;
+            float: left;
+            padding: 1%
+        }
+
+        .div-4 .right .right-c {
+            width: 100%;
+            height: 100%;
+            background-color: #d8d8d8
+        }
+
+        .div-5 {
+            width: 100%;
+            
+            height: 15%;
+
+        }
+
+        .div-5 .left {
+            width: 25%;
+            height: 100%;
+            
+            float: left;
+            padding: 1%
+        }
+
+        .div-5 .left .left-c {
+            width: 100%;
+            height: 100%;
+            background-color: #d8d8d8
+        }
+
+        .div-5 .center {
+            width: 25%;
+            height: 100%;
+           
+            float: left;
+            padding: 1%
+        }
+
+        .div-5 .center-c {
+            width: 100%;
+            height: 100%;
+            background-color: #d8d8d8
+        }
+
+        .div-5 .center-2 {
+            width: 25%;
+            height: 100%;
+            
+            float: left;
+            padding: 1%
+        }
+
+        .div-5 .center-2-c {
+            width: 100%;
+            height: 100%;
+            background-color: #d8d8d8
+        }
+
+        .div-5 .right {
+            
+            height: 100%;
+            width: 25%;
+            float: left;
+            padding: 1%
+        }
+
+        .div-5 .right .right-c {
+            width: 100%;
+            height: 100%;
+            background-color: #d8d8d8
+        }
+
+        .div-6 {
+            width: 100%;
+            
+            height: 7%;
+
+        }
+
+        .div-6 .center {
+            width: 100%;
+            height: 100%;
+            
+            float: left;
+            padding: 1% 26%;
+        }
+
+        .div-6 .center-c {
+            width: 100%;
+            height: 100%;
+            background-color: #d8d8d8
+        }
+
+        .div-7 {
+            width: 100%;
+          
+            height: 12%;
+
+        }
+
+        .div-7 .left {
+            width: 20%;
+            height: 100%;
+            
+            float: left;
+            padding: 1%
+        }
+
+        .div-7 .left .left-c {
+            width: 100%;
+            height: 100%;
+            background-color: #d8d8d8
+        }
+
+        .div-7 .center {
+            width: 30%;
+            height: 100%;
+            
+            float: left;
+            padding: 1%
+        }
+
+        .div-7 .center-c {
+            width: 100%;
+            height: 100%;
+            background-color: #d8d8d8
+        }
+
+        .div-7 .right {
+           
+            height: 100%;
+            width: 50%;
+            float: left;
+            padding: 1%
+        }
+
+        .div-7 .right .right-c {
+            width: 100%;
+            height: 100%;
+            background-color: #d8d8d8
+        }
+
+        .div-8 {
+            width: 100%;
+            
+            height: 57%;
+
+        }
+
+        .div-8 .left {
+            width: 33%;
+            height: 100%;
+            
+            float: left;
+            padding: 1%
+        }
+
+        .div-8 .left .left-c {
+            width: 100%;
+            height: 100%;
+            
+        }
+
+        .div-8 .left .left-c .top {
+            width: 100%;
+            height: 30%;
+            
+            padding-bottom: 3%;
+        }
+
+        .div-8 .left .left-c .top-c {
+            width: 100%;
+            height: 100%;
+            background-color: #d8d8d8
+
+        }
+
+        .div-8 .left .left-c .mid {
+            width: 100%;
+            height: 30%;
+            
+            padding: 2% 0;
+        }
+
+        .div-8 .left .left-c .mid-c {
+            width: 100%;
+            height: 100%;
+            background-color: #d8d8d8
+
+
+        }
+
+        .div-8 .left .left-c .bot {
+            width: 100%;
+            height: 30%;
+            
+            padding-top: 3%;
+
+        }
+
+        .div-8 .left .left-c .bot-c {
+            width: 100%;
+            height: 100%;
+            background-color: #d8d8d8
+
+        }
+
+
+        .div-8 .center {
+            width: 33%;
+            height: 100%;
+           
+            float: left;
+            padding: 1%
+        }
+
+
+        .div-8 .center-c {
+            width: 100%;
+            height: 100%;
+            
+        }
+
+        .div-8 .center .center-c .top {
+            width: 100%;
+            height: 35%;
+            
+            padding-bottom: 3%;
+        }
+
+        .div-8 .center .center-c .top-c {
+            width: 100%;
+            height: 100%;
+            background-color: #d8d8d8
+
+        }
+
+        .div-8 .center .center-c .mid {
+            width: 100%;
+            height: 44%;
+            
+            padding: 2% 0;
+        }
+
+        .div-8 .center .center-c .mid-c {
+            width: 100%;
+            height: 100%;
+            background-color: #d8d8d8
+
+
+        }
+
+        .div-8 .right {
+            
+            height: 100%;
+            width: 34%;
+            float: left;
+            padding: 1%
+        }
+
+        .div-8 .right .right-c {
+            width: 100%;
+            height: 100%;
+           
+        }
+        .div-8 .right .right-c  .top {
+            width: 100%;
+            height: 20%;
+            
+            padding-bottom: 3%;
+        }
+
+        .div-8 .right .right-c .top-c {
+            width: 100%;
+            height: 100%;
+            background-color: #d8d8d8
+
+        }
+
+        .div-8 .right .right-c .mid {
+            width: 100%;
+            height: 35%;
+            
+            padding: 2% 0;
+        }
+
+        .div-8 .right .right-c .mid-c {
+            width: 100%;
+            height: 100%;
+            background-color: #d8d8d8
+
+
+        }
+
+        .div-8 .right .right-c .bot {
+            width: 100%;
+            height: 45%;
+           
+            padding-top: 3%;
+
+        }
+
+        .div-8 .right .right-c .bot-c {
+            width: 100%;
+            height: 100%;
+            background-color: #d8d8d8
+
+        }
+        .div-9 {
+            width: 100%;
+            height: 400px; 
+           
+            padding: 9% 10%;
+        }
+        .div-10 {
+            width: 100%;
+             height: 100px; background-color: chartreuse;
+        }
+        .div-10 .div-10-1 {
+            width: 17%;
+             height: 100%; background-color: chocolate;
+             float: left;
+        }
+        .div-10 .div-10-2 {
+            width: 16%;
+             height: 100%; background-color: coral;
+             float: left;
+        }
+        .div-10 .div-10-3 {
+            width: 16%;
+             height: 100%; background-color: crimson;
+             float: left;
+        }
+        .div-10 .div-10-4 {
+            width: 17%;
+             height: 100%; background-color: darkcyan;
+             float: left;
+        }
+        .div-10 .div-10-5 {
+            width: 17%;
+             height: 100%; background-color: darkgoldenrod;
+             float: left;
+        }
+        .div-10 .div-10-6 {
+            width: 17%;
+             height: 100%; background-color: darkgrey;
+             float: left;
+        }
+        .div-11 {
+            width: 100%;
+            height: 130px;
+            
+        }
+        .div-11 .left {
+           width: 33%; height: 100%; ; float: left;    padding: 0 8%;
+        }
+        .div-11 .left .left-c {
+           width: 100%; height: 100%; background-color: blueviolet;
+        }
+        .div-11 .center{
+           width: 33%; height: 100%;  float: left;    padding: 0 8%;
+        }
+        .div-11 .center .center-c {
+           width: 100%; height: 100%; background-color: cadetblue;
+        }
+        .div-11 .right {
+           width: 34%; height: 100%;  float: left;    padding: 0 8%;
+        }
+        .div-11 .right .right-c {
+           width: 100%; height: 100%; background-color: brown;
+        }
+        
+    </style>
+</head>
+
+<body>
+
+    <div id="wrap">
+        <div class="div-1">
+
+        </div>
+        <div class="div-2">
+
+
+            <div class="div-3">
+
+
+                <div class="div-4">
+                    <div class="left">
+                        <div class="left-c"></div>
+                    </div>
+                    <div class="right">
+                        <div class="right-c"></div>
+                    </div>
+                </div>
+                <div class="div-5">
+                    <div class="left">
+                        <div class="left-c"></div>
+                    </div>
+                    <div class="center">
+                        <div class="center-c"></div>
+                    </div>
+                    <div class="center-2">
+                        <div class="center-2-c"></div>
+                    </div>
+                    <div class="right">
+                        <div class="right-c"></div>
+                    </div>
+                </div>
+                <div class="div-6">
+                    <div class="center">
+                        <div class="center-c">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="div-7">
+                    <div class="left">
+                        <div class="left-c"></div>
+                    </div>
+                    <div class="center">
+                        <div class="center-c"></div>
+                    </div>
+                    <div class="right">
+                        <div class="right-c"></div>
+                    </div>
+                </div>
+                <div class="div-8">
+                    <div class="left">
+                        <div class="left-c">
+                            <div class="top">
+                                <div class="top-c"></div>
+                            </div>
+                            <div class="mid">
+                                <div class="mid-c"></div>
+                            </div>
+                            <div class="bot">
+                                <div class="bot-c"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="center">
+                        <div class="center-c">
+                            <div class="top">
+                                <div class="top-c"></div>
+                            </div>
+                            <div class="mid">
+                                <div class="mid-c"></div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="right-c">
+                            <div class="top">
+                                <div class="top-c"></div>
+                            </div>
+                            <div class="mid">
+                                <div class="mid-c"></div>
+                            </div>
+                            <div class="bot">
+                                <div class="bot-c"></div>
+                            </div>
+                        </div>
+                    </div>
+                   
+                </div>
+                
+                
+            </div>
+
+
+        </div>
+    </div>
+    <div class="div-9">
+          <div class="div-10">
+              <div class="div-10-1"></div>
+              <div class="div-10-2"></div>
+              <div class="div-10-3"></div>
+              <div class="div-10-4"></div>
+              <div class="div-10-5"></div>
+              <div class="div-10-6"></div>
+          </div>
+          <div class="div-11">
+              <div class="left">
+                  <div class="left-c"></div>
+              </div>
+              <div class="center">
+                <div class="center-c"></div>
+              </div>
+              <div class="right">
+                <div class="right-c"></div>
+              </div>
+          </div>
+    </div>
+
+    </div>
+
+</body>
+
+</html>
