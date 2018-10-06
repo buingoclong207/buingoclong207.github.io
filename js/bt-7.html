@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+      <style>
+            
+             #wrap { width: 400px; height: 400px; border: 1px solid cadetblue; margin: 10% auto;}
+             .nhap {    width: 90%;
+    height: 12%;
+    
+    margin: 5% auto;}
+             .pheptinh {width: 90%;
+    margin: 5% auto;
+    height: 72%;
+    border: 1px solid cadetblue;}
+            .chung {     width: 90%;
+    height: 15%;
+    margin: 3% auto;
+     }
+            .same{
+                width: 21%;
+    height: 99%;
+    
+    margin: 0px 6px;
+    float: left;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+            }
+            .same-1{
+                width: 21%;
+    height: 99%;
+    
+    margin: 0px 6px;
+    float: left;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+            }
+            .same-2 {
+                width: 21%;
+    height: 99%;
+   
+    margin: 0px 6px;
+    float: left;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+            }
+    button {    padding: 15% 41%;}
+    input {    height: 100%;
+    width: 99%;
+    display: flex;
+    font-size: 38px;}
+   
+      </style>
+  
+
+  
+</head>
+<body>
+      <div id="wrap">
+            <div class="nhap">
+                  
+                  <input type="text"  id="display" >
+            </div>
+            <div class="pheptinh">
+                   <div class="cl-1 chung">
+                         <div class="row-1 same"><button onclick="binhphuong()">x&sup2;</button></div>
+                         <div class="row-2 same"><button onclick="giaithua()">x!</button></div>
+                         <div class="row-3 same" ><button onclick="phantram()">%</button></div>
+                         <div class="row-4 same"><button onclick="xoa()">&larr;</button></div>
+                         
+                   </div>
+                   <div class="cl-2 chung">
+                        <div class="row-1 same-1"><button onclick="maytinh(7)">7</button></div>
+                        <div class="row-2 same-1"><button onclick="maytinh(8)">8</button></div>
+                        <div class="row-3 same-1"><button onclick="maytinh(9)">9</button></div>
+                        <div class="row-4 same-2"><button onclick="maytinh(':')">/</button></div>
+                        
+                   </div>
+                   <div class="cl-3 chung">
+                        <div class="row-1 same-1"><button onclick="maytinh(4)">4</button></div>
+                        <div class="row-2 same-1"><button onclick="maytinh(5)">5</button></div>
+                        <div class="row-3 same-1"><button onclick="maytinh(6)">6</button></div>
+                        <div class="row-4 same-2"><button onclick="maytinh('x')">x</button></div>
+                         
+                   </div>
+                   <div class="cl-4 chung">
+                        <div  class="row-1 same-1"  ><button  onclick="maytinh(1)">1</button></div>
+                        <div class="row-2 same-1"><button  onclick="maytinh(2)">2</button></div>
+                        <div class="row-3 same-1"><button  onclick="maytinh(3)">3</button></div>
+                        <div class="row-4 same-2"><button  onclick="maytinh('-')">-</button></div>
+                        
+                   </div>
+                   <div class="cl-5 chung">
+                        <div class="row-1 same-1"><button onclick="maytinh(0)">0</button></div>
+                        <div class="row-2 same-1"><button onclick="maytinh('.')">.</button></div>
+                        <div class="row-3 same-1"><button onclick="bang()">=</button></div>
+                        <div class="row-4 same-2"><button onclick='maytinh("+")'>+</button></div>
+                        
+                   </div>
+            </div>
+      </div>
+
+      <script>
+            var display = document.getElementById("display");
+            function maytinh(input){   
+           var display = document.getElementById("display");
+            display.value += input;
+
+         
+
+            }
+
+            function bang(){
+                  let strDisplay = display.value;
+                  
+                  strDisplay =strDisplay.replace(/x/g,"*");
+                  
+                  strDisplay =strDisplay.replace(/:/g,"/");
+                 
+                  
+                  display.value=eval(strDisplay);
+            }
+            
+            function xoa(){
+                  display.value=""
+            }
+            function binhphuong(){
+                  display.value= display.value*display.value;
+            }
+            function phantram(){
+                  display.value = display.value/100
+            }
+            function canbachai(){
+                  display.value = Math.sqrt(display.value)
+            } 
+           
+            function giaithua() {
+      var b = display.value
+      display.value = 1;
+      for (var i = 1; i <= b; i++) {
+        display.value = display.value * i;
+      }
+      }
+      
+     
+    
+            </script>
+</body>
+</html>

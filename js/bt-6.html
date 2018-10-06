@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        function bai1(X) {
+
+            var a = X + "px"
+            var b = document.getElementsByTagName("p")
+            for (i = 0; i < b.length; i++) {
+                b.item(i).style.fontSize = a
+
+            }
+        }
+        function BD(paragram) { // Bài 2
+            var b = window.getComputedStyle(paragram, null).getPropertyValue("font-size");
+            var c = parseInt(b)
+            if (c < 30) {
+                var d = (c + 1) + "px"
+                paragram.style.fontSize = d
+            }
+            else {
+                return;
+            }
+        }
+        function bai2(n) {
+
+            var a = document.getElementById("p1");
+            var e = document.getElementById("p2");
+            var f = document.getElementById("p3");
+
+            if (n == 1) {
+                BD(a);
+
+            }
+            else if (n == 2) {
+                BD(e);
+
+            }
+            else {
+                BD(f);
+
+            }
+
+
+        }
+        function VD(paragram) {  // Bài 3
+            var b = window.getComputedStyle(paragram, null).getPropertyValue("font-size");
+            var c = parseInt(b)
+            if (c > 10) {
+                var d = (c - 1) + "px"
+                paragram.style.fontSize = d
+            }
+            else {
+                return;
+            }
+        }
+        function bai3(n) {
+
+            var a = document.getElementById("p1");
+            var e = document.getElementById("p2");
+            var f = document.getElementById("p3");
+
+            if (n == 1) {
+                VD(a);
+
+            }
+            else if (n == 2) {
+                VD(e);
+
+            }
+            else {
+                VD(f);
+
+            }
+
+
+        }
+
+
+        function bai4() {
+            var b = document.getElementsByTagName("p")
+            for (i = 0; i < b.length; i++) {
+                if (i == 0) {
+                    b.item(i).style.color = "blue"
+                }
+                else if (i == 1) {
+                    b.item(i).style.color = "red"
+                }
+                else {
+                    b.item(i).style.color = "yellow"
+                }
+            }
+        }
+        function bai5(a) {
+            var b = document.body
+            b.style.backgroundColor = a
+
+
+
+        }
+
+
+    </script>
+</head>
+
+<body>
+    <div id="p1">
+        <p class="noname">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
+            id est laborum."</p>
+    </div>
+    <div id="p2">
+        <p class="noname">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
+            id est laborum."</p>
+    </div>
+    <div id="p3">
+        <p class="noname">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
+            id est laborum."</p>
+    </div>
+
+</body>
+
+</html>

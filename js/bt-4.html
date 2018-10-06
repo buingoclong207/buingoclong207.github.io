@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        function bai1() {
+            var b = new Date
+            var ngay = b.getDate()
+            var thang = b.getDay() + 7
+            var nam = b.getFullYear()
+            document.write("Ngày " + ngay + " Tháng " + thang + " Năm " + nam + " ");
+            switch (thang) {
+                case 1, 2, 3:
+                    document.write("mùa xuân");
+                    break;
+                case 4, 5, 6:
+                    document.write("mùa hạ");
+                    break;
+                case 7, 8, 9:
+                    document.write("mùa thu");
+                    break;
+                default:
+                    document.write("mùa đông");
+                    break;
+            }
+        } 
+        function bai2(a) {
+            if (typeof a == "string") {
+                if (a.length <= 10) {
+                    document.write(a)
+                }
+                else {
+                    var b = a.slice(0, 9)
+                    document.write('"' + b + '"')
+                }
+            }
+            else {
+                var d = a.toString()
+                document.write(" Tham số " + a + " là một " + typeof d)
+            }
+
+        }
+
+        function bai3(a) {
+            if (a > 8.5 && a < 10) {
+                document.write("điểm A")
+            }
+            else if (a > 7 && a < 8) {
+                document.write("điểm B")
+            }
+            else if (a > 7 && a < 8) {
+                document.write("điểm C")
+            }
+            else if (a > 5.5 && a < 6.9) {
+                document.write("điểm D")
+            }
+            else if (a > 0 && a < 3.9) {
+                document.write("điểm F")
+            }
+        }
+        function bai4(b) {
+            switch (b) {
+                case 1:
+                    document.write("tiếng hàn");
+                    break;
+                case 2:
+                    document.write("nhật ");
+                    break;
+                case 3:
+                    document.write("trung");
+                    break;
+                case 4:
+                    document.write("Thái");
+                    break;
+                default:
+                    document.write("việt");
+                    break;
+            }
+
+        }
+
+        function bai5(a) {
+            var b = "true"
+            var c = "false"
+            for (i = 0; i < a.length; i++) {
+                var d = a.indexOf(b)
+            }
+            document.writeln(d + 1)
+            return d + 1;
+        }
+
+        function bai6() {
+
+            for (i = 0; i <=100; i += 2) {
+
+
+                document.write('<div style="color: blue">'+i +'</div>');
+                var b =i+1
+                document.write('<div style="color: red">'+b + '<br/>');
+            }
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</head>
+
+<body>
+          
+</body>
+
+</html>
