@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <script>
-            function cau1(a, b, c) {
+        function cau1(a, b, c) {
             var d = [];
             d.push(parseInt(a), parseInt(b), parseInt(c));
             var e = Math.max.apply(Math, d)
-            document.write( e)
+            document.write(e)
 
         }
         function cau2(sogiolam, luong) {
@@ -18,20 +19,20 @@
             var b = luong
             if (a > 40) {
                 var c = (40 * b) + (a - 40) * b
-                document.write( c)
+                document.write(c)
             }
             else {
                 var d = a * b
-                document.write( d)
+                document.write(d)
             }
         }
-        function cau3(a,b,c){
-        if(a+b>c && a+c>b && b+c>a){
-           document.write("Yes")
-        }
-        else {
-            document.write("No")
-        }
+        function cau3(a, b, c) {
+            if (a + b > c && a + c > b && b + c > a) {
+                document.write("Yes")
+            }
+            else {
+                document.write("No")
+            }
         }
         function cau4(a, b) {
             for (i = a - 1; i < b; i++) {
@@ -56,38 +57,53 @@
             }
         }
         function cau6(n) {
-                var tong = 0
+            var tong = 0
             for (i = 0; i <= n; i++) {
-             if(i%2 && i!=0){
-                 
-                 tong = tong + i           
+                if (i % 2 && i != 0) {
+
+                    tong = tong + i
+                }
+
             }
-            
+            document.write(tong)
         }
-        document.write(tong)
+        function cau7(n) {
+           if(n>3 && n%2==0 && n%1==0 && n%n==0){
+               document.write("không phải số nguyên tố")
+           }
+           else if(n>3 && n%3==0 && n%1==0 && n%n==0){
+            document.write("không phải số nguyên tố")
+           }
+           else {document.write("là số nguyên tố")
+           }
         }
-        function cau7(n){
-            if(n%1==0 && n%n==0 &&  n%3==0 ){
-                document.write(n+" là không số nguyên tố")
+
+        function cau9(n) {
+            var a = n + ""
+            var b = a.split("")
+            let tong = 0
+            for (i = 0; i < b.length; i++) {
+                tong = tong + parseInt(b[i])
             }
-            else if (n%1==0 && n%n==0 &&  n%2==0){
-                document.write(n+" là không nguyên tố")
-            }
-            else {
-                document.write(n+" là số nguyên tố")
-            }
+            document.write(tong)
         }
-        function cau10(n){
-            
-            var b =n.split("")
-        var c = Math.max(b)
-        var d = c.join("")
-        document.write(b)
+
+        function cau10(n) {
+            var a = n + ""
+            var b = a.split("")
+
+            for (i = 0; i < b.length; i++) {
+                var d = parseInt(b[i])
+                var e = Math.max(d)
+            }
+            document.write(e)
         }
-        
+
     </script>
 </head>
+
 <body>
-    
+
 </body>
+
 </html>
